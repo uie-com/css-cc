@@ -1,18 +1,225 @@
 /*------------------------------------*\
-    CONTENTS
+    INDEX
 \*------------------------------------*/
 
 /*
+    * Broken window theory (The Pragmatic Programmer - David Thomas and Andrew Hunt)
+*/
+
+/*
 GENERAL
+LAYOUT
+TYPOGRAPHY
+HERO
 HEADER
+COMPONENTS
+    HERO  
+    BUTTONS (AGILE; METRICS; GOALS; RESEARCH; HIRING; LOA)
+    QUOTES
+    TIMETABLE
+    ALERTS
+FORMS
 FOOTER
 */ 
+
+
 
 /*------------------------------------*\
     $GENERAL
 \*------------------------------------*/
 
+html {
+    scroll-behavior: smooth;
+  }
 
+:root {
+    --darkRed: #951a1d;
+    --brightRed: #d52327;
+    --darkBlue: #006F74;
+    --brightBlue: #00A3B4;
+    --darkGreen: #575e22;
+    --brightGreen: #8c9b28;
+    --orange: #9b621c;
+     --darkYellow: #d8a739; /*original CC colour */
+    --brightYellow: #FFCD5E;
+    --darkPurple: #662547;
+    --brightPurple: #9B0E5B;
+    --darkOrange: #C14E27;
+    --brightOrange: #EC621D;
+    --lightgrey: #f2f2f2;
+    --darkGray: #a3a3a3;
+    --black: #2c2c2c;
+    --bgMain: #9B0E5B;
+    --white: #fff; 
+    /* --accent: (var(brightRed)); */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* color: rgb(47 47 47); */
+    box-sizing: border-box;
+}
+
+/*------------------------------------*\
+    $LAYOUT
+    Break Points: 750px	970px	1170px
+\*------------------------------------*/
+
+.container-cc, .container-no-pad-cc {
+    max-width: 970px;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 900px) {
+    .container-cc {
+        padding: 20px;
+    }
+    .container-no-pad {
+        padding: 0px;
+    }
+}
+
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+
+*/
+ul,
+ol {
+    /* display: block; */
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 50px;
+}
+
+h1 {
+    font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+p,
+li {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+p {
+    margin-bottom: 20px;
+}
+.text-white {
+    color: var(--white);
+}
+.text-green{
+    color: var(--darkBlue);
+}
+.text-red{
+    color: var(--darkRed);
+}
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+    /*------------------------------------*\
+         $BUTTON
+    \*------------------------------------*/    
+    .btn:link, .btn:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.8em 2em;
+    }
+
+    .btn-goals{
+        color: var(--white);
+        background-color: var(--brightGreen);
+    }
+    .btn-goals:hover{
+        background-color: var(--darkGreen);
+    }
+    .btn-metrics{
+
+    }
+
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+.header {
+    padding: 35px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.header img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+.lead {
+    padding: 60px 0px;
+}
+.lead h1 {
+    color: white;
+    font-size: 58px;
+    margin: 20px 30px 20px 0px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1;
+    /* font-style: italic; */
+}
+
+@media screen and(max-width: 800px) {
+    #header .head-logo {
+        flex-basis: 60%;
+        margin: 20px;
+    }
+    #header .head-button {
+        flex-basis: 40%;
+        margin: 20px ;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #header .head-button .cta-b {
+        display: flex;
+        vertical-align: middle;
+        padding: 0.5em 1em;
+    }
+    #header img{
+        max-width: 200px;
+    }
+}
+
+.lead p {
+
+    color: white;
+}
+.hero-subheader{
+    font-size:28px;
+}
+.lead .lead-text {
+    margin: 20px 30px 5px 0px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: white;
+    color: var(--bgMain);
+    display: inline-block;
+    padding: 2px 15px;
+}
+
+.lead .lead-desc {
+    margin: 20px 30px 20px 0px;
+    font-weight: 300;
+    font-size: 25px;
+    max-width: 600px;
+    /* font-style: italic; */
+}
+
+
+/*------------------------------------*\
+    $END HEADER
+\*------------------------------------*/
 
 /*------------------------------------*\
     $FOOTER
@@ -54,13 +261,6 @@ footer img {
     margin-top: 200px;
 }
 
-/*
-----------------------------
-START -- NEW FOOTER
-----------------------------
-*/
-
-.ft-mk {}
 
 
 .ft-mk .ft-logo {
@@ -117,7 +317,6 @@ START -- NEW FOOTER
         flex-basis: 100% !important;
     }
 }
-
 
 @media only screen and (max-width: 500px) {
 
