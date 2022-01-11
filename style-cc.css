@@ -3,55 +3,66 @@
 \*------------------------------------*/
 
 /*
-    * Broken window theory (The Pragmatic Programmer - David Thomas and Andrew Hunt)
-*/
-
-/*
 GENERAL
+UTILITY CLASSES
 LAYOUT
+COLORS
 TYPOGRAPHY
-HERO
-HEADER
+ 
 COMPONENTS
-    HERO  
+	TOPBAR
+    HERO
+	    HERO AGILE
+	    HERO GOALS
+	    HERO HIRING
+	    HERO METRICS
+	    HERO RESEARCH
+    HEADER
     BUTTONS (AGILE; METRICS; GOALS; RESEARCH; HIRING; LOA)
     QUOTES
     TIMETABLE
     ALERTS
+
 FORMS
 FOOTER
-*/ 
+*/
+
+
+/*
+    * Broken window theory (The Pragmatic Programmer - David Thomas and Andrew Hunt)
+*/
 
 
 
 /*------------------------------------*\
     $GENERAL
 \*------------------------------------*/
-
-html {
-    scroll-behavior: smooth;
-  }
-
 :root {
-    --darkRed: #951a1d;
-    --brightRed: #d52327;
+
     --darkBlue: #006F74;
     --brightBlue: #00A3B4;
     --darkGreen: #575e22;
     --brightGreen: #8c9b28;
-    --orange: #9b621c;
-     --darkYellow: #d8a739; /*original CC colour */
-    --brightYellow: #FFCD5E;
+    --darkRed: #951a1d;
+    --brightRed: #d52327;
     --darkPurple: #662547;
     --brightPurple: #9B0E5B;
+    --orange: #9b621c;
     --darkOrange: #C14E27;
     --brightOrange: #EC621D;
-    --lightgrey: #f2f2f2;
+    --darkYellow: #d8a739;
+    --brightYellow: #FFCD5E;
+
+
+
+    --white: #fff;
+    --lightGray: #f2f2f2;
     --darkGray: #a3a3a3;
     --black: #2c2c2c;
-    --bgMain: #9B0E5B;
-    --white: #fff; 
-    /* --accent: (var(brightRed)); */
+
+    --bgMain: var(--brightPurple);
+    --accent: var(--darkBlue);
+    --accentBG: var(--darkOrange)
 }
 
 * {
@@ -64,29 +75,262 @@ html {
 }
 
 /*------------------------------------*\
-    $LAYOUT
-    Break Points: 750px	970px	1170px
+    $GENERAL
 \*------------------------------------*/
 
-.container-cc, .container-no-pad-cc {
-    max-width: 970px;
+
+/*------------------------------------*\
+    $UTILITY CLASSES
+\*------------------------------------*/
+.img-cc {
+    max-width: 100%;
+    display: block;
+}
+
+/*------------------------------------*\
+    END $UTILITY CLASSES
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    $LAYOUT
+    Break Points: 54em; 
+\*------------------------------------*/
+.container-cc {
+    width: 85%;
+    max-width: 66em;
     margin: 0 auto;
 }
-@media only screen and (max-width: 900px) {
-    .container-cc {
-        padding: 20px;
-    }
-    .container-no-pad {
-        padding: 0px;
+
+.column {
+    padding: 1em;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    padding: 0;
+}
+
+.column:not(:last-child) {
+    padding-right: 16px;
+}
+
+.split {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.basis20 {
+    flex-basis: 20%;
+}
+
+.basis25 {
+    flex-basis: 25%;
+}
+
+.basis30 {
+    flex-basis: 30%;
+}
+
+.basis33 {
+    flex-basis: 33.334%;
+}
+
+.basis40 {
+    flex-basis: 40%;
+}
+
+.basis50 {
+    flex-basis: 50%;
+}
+
+.basis60 {
+    flex-basis: 60%;
+}
+
+.basis70 {
+    flex-basis: 70%;
+}
+
+.basis80 {
+    flex-basis: 80%;
+}
+
+.headline {
+    flex-basis: 100%;
+}
+
+.max-20em {
+    max-width: 20em;
+}
+
+.max-10em {
+    max-width: 10em;
+}
+
+.image-left {
+    margin-right: auto;
+}
+
+.image-right {
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 54em) {
+    .image-left, .image-right {
+        margin-right: auto;
+        margin-left: auto;
     }
 }
+
+@media only screen and (max-width: 54em) {
+    .split {
+        flex-direction: column;
+    }
+
+    .column:not(:last-child) {
+        padding-right: 0px;
+    }
+
+    .column:last-child {
+        margin-bottom: 1em;
+    }
+
+    .column:first-child {
+        margin-top: 1em;
+    }
+
+    .basis20, .basis25, .basis30, .basis40, .basis50, .basis60, .basis80 {
+        flex-basis: 100%;
+        margin: 0 auto;
+        max-width: 30em;
+    }
+
+    .m-width-300 {
+        max-width: 300px;
+    }
+
+    .m-width-200 {
+        max-width: 200px;
+    }
+}
+
+
+/*------------------------------------*\
+    $Colors
+\*------------------------------------*/
+
+.bg-darkRed {
+    background-color: var(--darkRed);
+}
+
+.bg-brightRed {
+    background-color: var(--brightRed);
+}
+
+.bg-darkBlue {
+    background-color: var(--darkBlue);
+}
+
+.bg-brightBlue {
+    background-color: var(--brightBlue);
+}
+
+
+
+.bg-darkGreen {
+    background-color: var(--darkGreen);
+}
+
+.bg-brightGreen {
+    background-color: var(--brightGreen);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.bg-brightOrange {
+    background-color: var(--brightOrange);
+}
+
+.bg-darkOrange {
+    background-color: var(--darkOrange);
+}
+
+.bg-darkYellow {
+    background-color: var(--darkYellow);
+}
+
+.bg-brightYellow {
+    background-color: var(--brightYellow);
+}
+
+.bg-darkPurple {
+    background-color: var(--darkPurple);
+}
+
+.bg-brightPurple {
+    background-color: var(--brightPurple);
+}
+
+
+.bg-main {
+    background-color: var(--main);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+
+.bg-lightGray {
+    background-color: var(--lightGray);
+}
+
+.bg-darkGray {
+    background-color: var(--darkGray);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+
+
+
+
 
 /*------------------------------------*\
     $TYPOGRAPHY
 \*------------------------------------*/
+p,
+li {
+    font-size: 20px;
+    line-height: 1.5;
+}
 
-*/
-ul,
+*/ ul,
 ol {
     /* display: block; */
     margin-block-start: 0em;
@@ -96,134 +340,136 @@ ol {
     padding-inline-start: 50px;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
     font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.1;
 }
 
-p,
-li {
-    font-size: 20px;
-    line-height: 1.5;
-}
+
 
 p {
-    margin-bottom: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
+
 .text-white {
     color: var(--white);
 }
-.text-green{
-    color: var(--darkBlue);
-}
-.text-red{
-    color: var(--darkRed);
-}
+
+
+/*------------------------------------*\
+    END $TYPOGRAPHY
+\*------------------------------------*/
+
 
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-    /*------------------------------------*\
-         $BUTTON
-    \*------------------------------------*/    
-    .btn:link, .btn:visited{
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 0.8em 2em;
-    }
 
-    .btn-goals{
-        color: var(--white);
-        background-color: var(--brightGreen);
-    }
-    .btn-goals:hover{
-        background-color: var(--darkGreen);
-    }
-    .btn-metrics{
-
-    }
 
 /*------------------------------------*\
-    $HEADER
+    $TOPBAR
 \*------------------------------------*/
-.header {
-    padding: 35px 20px;
+
+#header .topbar {
+    /* padding: 35px 20px; */
     display: flex;
     justify-content: space-between;
 }
-.header img {
-    width: 200px;
-    max-width: 100%;
+
+#header .topbar img {
+    max-width: 200px;
+    width: 100%;
     height: auto;
 }
-.lead {
-    padding: 60px 0px;
-}
-.lead h1 {
-    color: white;
-    font-size: 58px;
-    margin: 20px 30px 20px 0px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    line-height: 1;
-    /* font-style: italic; */
-}
 
-@media screen and(max-width: 800px) {
-    #header .head-logo {
-        flex-basis: 60%;
-        margin: 20px;
+
+
+@media screen and (max-width: 27em) {
+    #header .btn {
+        font-size: 0.75rem !important;
     }
-    #header .head-button {
-        flex-basis: 40%;
-        margin: 20px ;
-        display: flex;
-        justify-content: flex-end;
-    }
-    #header .head-button .cta-b {
-        display: flex;
-        vertical-align: middle;
-        padding: 0.5em 1em;
-    }
-    #header img{
+    #header .topbar img {
         max-width: 200px;
+        width: 100%;
+        height: 100%;
+        max-height: 40px;
     }
-}
-
-.lead p {
-
-    color: white;
-}
-.hero-subheader{
-    font-size:28px;
-}
-.lead .lead-text {
-    margin: 20px 30px 5px 0px;
-    font-weight: 600;
-    font-size: 18px;
-    background-color: white;
-    color: var(--bgMain);
-    display: inline-block;
-    padding: 2px 15px;
-}
-
-.lead .lead-desc {
-    margin: 20px 30px 20px 0px;
-    font-weight: 300;
-    font-size: 25px;
-    max-width: 600px;
-    /* font-style: italic; */
 }
 
 
 /*------------------------------------*\
-    $END HEADER
+    $END TOPBAR
 \*------------------------------------*/
+
+
+
+/*------------------------------------*\
+         $BUTTON
+    \*------------------------------------*/
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--buttonTextColor, #fff);
+    max-width: 10em;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 0.8em 2em;
+    background: var(--accent, black);
+    -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, opacity 250ms linear;
+    transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    margin: 0.35em;
+}
+
+.btn:hover,
+.btn:focus {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+.btn-goals{
+    font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--black) !important;
+    background-color: white;
+    transition: background-color 0.24s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 1px 1px 0px 0px rgb(8 8 8), -1px -1px 0px 0px rgb(8 8 8), 1px -1px 0px 0px rgb(0 0 0), -1px 1px 0px 0px rgb(0 0 0), -6px 6px 0px 0px rgb(0 0 0);
+    -webkit-box-shadow: 1px 1px 0px 0px rgb(8 8 8), -1px -1px 0px 0px rgb(8 8 8), 1px -1px 0px 0px rgb(0 0 0), -1px 1px 0px 0px rgb(0 0 0), -6px 6px 0px 0px rgb(0 0 0);
+    -moz-box-shadow: 1px 1px 0px 0px rgb(8, 8, 8), -1px -1px 0px 0px rgb(8, 8, 8), 1px -1px 0px 0px rgb(0, 0, 0), -1px 1px 0px 0px rgb(0, 0, 0), -6px 6px 0px 0px rgba(0,0,0,1);
+    position: relative;
+}
+.btn-goals:hover {
+    background-color: rgb(242, 245, 234);;
+    box-shadow: 1px 1px 0px 0px rgb(8, 8, 8), -1px -1px 0px 0px rgb(8, 8, 8), 1px -1px 0px 0px rgb(0, 0, 0), -1px 1px 0px 0px rgb(0, 0, 0), -3px 3px 0px 0px rgba(0,0,0,1);
+    -webkit-box-shadow:1px 1px 0px 0px rgb(8, 8, 8), -1px -1px 0px 0px rgb(8, 8, 8), 1px -1px 0px 0px rgb(0, 0, 0), -1px 1px 0px 0px rgb(0, 0, 0), -3px 3px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow:1px 1px 0px 0px rgb(8, 8, 8), -1px -1px 0px 0px rgb(8, 8, 8), 1px -1px 0px 0px rgb(0, 0, 0), -1px 1px 0px 0px rgb(0, 0, 0), -3px 3px 0px 0px rgba(0,0,0,1);
+    top:2px;
+    left:-3px;
+}
+
+
+
+
+/*------------------------------------*\
+     END   $BUTTON
+\*------------------------------------*/
+
+
+
+
+
 
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -249,7 +495,7 @@ footer img {
 }
 
 .contr {
-    max-width: 960px;
+    max-width: 66em;
     margin: 0 auto;
 }
 
@@ -260,8 +506,6 @@ footer img {
 .margin-for-testing {
     margin-top: 200px;
 }
-
-
 
 .ft-mk .ft-logo {
     max-width: 340px;
@@ -313,25 +557,21 @@ footer img {
 
     .ft-mk .c1 {
         align-self: flex-end !important;
-
         flex-basis: 100% !important;
     }
 }
 
 @media only screen and (max-width: 500px) {
-
     .ft-mk .b2 {
         flex-basis: 100% !important;
     }
 
     .ft-mk .c1 {
-
         flex-basis: 100% !important;
     }
 }
 
 @media only screen and (max-width: 400px) {
-
     .footer-notice :not(:first-child):not(:last-child) {
         padding-top: 0px;
         padding-bottom: 0px;
@@ -400,6 +640,12 @@ footer img {
     border: none;
     border-top: 1px solid rgb(115 115 115);
 }
+
+
 /*------------------------------------*\
    END $FOOTER
 \*------------------------------------*/
+
+
+
+
