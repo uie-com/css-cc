@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style-cc.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style-goals.css">
+    <title>CenterCentre Design System</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,7 +21,7 @@
 
 
     <div class="container-cc">
-        <section id="header">
+        <section id="header" class=" column">
             <div class="gray-bg">
                 <div class="container topbar">
                     <div class="head-logo">
@@ -32,13 +38,25 @@
 
 
 
+    <div class="container-cc">
+        <div class="basis33 colum">
+
+        </div>
+        <div class="basis33 colum">
+
+        </div>
+        <div class="basis33 colum">
+
+        </div>
+    </div>
+
 
     <style>
         section {
             padding-top: 3em;
         }
     </style>
-    <section class="colors">
+    <section class="colors  column">
 
         <style>
             .colors .column {
@@ -48,7 +66,7 @@
         </style>
 
         <div class="container-cc split colors" style="justify-content:flex-start;">
-            <div class="headline">
+            <div class="basis100  column">
                 <h3>Colors</h3>
             </div>
 
@@ -229,8 +247,112 @@
     </section>
 
 
+    <section>
+        <style>
+            .square-tag::before {
+                height: 1.2em;
+                width: 1.2em;
+                display: inline-block;
+                content: '';
+                position: relative;
+                bottom: -0.2em;
+                right: 0.2em
+            }
+
+            .square-tag-agile::before {
+                background-color: var(--brightYellow);
+            }
+
+            .square-tag-metrics::before {
+                background-color: var(--brightPurple);
+            }
+
+            .square-tag-research::before {
+                background-color: var(--darkOrange);
+            }
+
+            .square-tag-goals::before {
+                background-color: var(--brightGreen);
+            }
+
+            .square-tag-hiring::before {
+                background-color: var(--brightOrange);
+            }
+
+            .square-tag-community::before {
+                background-color: var(--brightBlue);
+            }
+        </style>
+        <div class="container-cc split">
+            <div class="headline">
+                <h3>Landing Pages</h3>
+            </div>
+            <div class="column basis25">
+                <div class="square-tag square-tag-agile"><a href="https://agile.centercentre.com/">Agile</a> | <a href="https://aux.uie.com/">ex:AUX</a></div>
+            </div>
+            <div class="column basis25">
+                <div class="square-tag square-tag-metrics"><a href="https://metrics.centercentre.com/">Metrics</a> | <a
+                        href="https://puxm.uie.com/full-index.html">ex:PUXM</a></div>
+            </div>
+            <div class="column basis25">
+                <div class="square-tag square-tag-research"><a href="https://research.centercentre.com/">Research</a> |
+                    <a href="https://aatur.uie.com/">ex:AATUR</a></div>
+            </div>
+            <div class="column basis25">
+                <div class="square-tag square-tag-goals"><a href="https://goals.centercentre.com/">Goals</a> | <a
+                        href="https://gcev.uie.com/">ex:GCEV</a></div>
+            </div>
+            <div class="column basis25">
+                <div class="square-tag square-tag-hiring"><a href="https://hiring.centercentre.com/">Hiring</a></div>
+            </div>
+            <div class="column basis25">
+                <div class="square-tag square-tag-community"><a href="https://community.centercentre.com/">Community</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 
     <section>
+        <div class="container-cc split">
+            <div class="headline column">
+                <h3>Buttons</h3>
+            </div>
+            <a class="btn" href="https://leaders.centercentre.com/">Join Now</a>
+            <a class="btn btn-purple " href="https://leaders.centercentre.com/">Join Now</a>
+            <a class="btn btn-green " href="https://leaders.centercentre.com/">Join Now</a>
+            <a class="btn btn-yellow" href="https://leaders.centercentre.com/">Join Now</a>
+            <a class="btn btn-orange" href="https://leaders.centercentre.com/">Join Now</a>
+            <a class="btn btn-blue" href="https://leaders.centercentre.com/">Join Now</a>
+
+
+
+            <div class="basis100 column">
+                <h3>Custom buttons</h3>   </div>
+              <div class="basis100">
+                <a class="btn btn-goals " href="https://leaders.centercentre.com/">Join Now</a>
+                <a class="btn btn-agile" href="https://leaders.centercentre.com/">Join Now</a>
+                <a class="btn btn-goals-cta" href="https://leaders.centercentre.com/">Join Now</a>
+                <a class="btn btn-metrics-cta" href="https://leaders.centercentre.com/">Join Now</a>
+                <a class="btn btn-hiring-cta" href="https://leaders.centercentre.com/">Join Now</a>
+              </div>
+        <div class="basis50 column" style="display: block;">
+            <h3>Combining classes</h3>   
+            <a class="btn  btn-fill" href="https://leaders.centercentre.com/">.btn .btn-fill</a>
+            <a class="btn  btn-orange btn-fill btn-shadow" href="https://leaders.centercentre.com/">.btn  .btn-orange .btn-fill .btn-shadow</a>
+        </div>
+    </div>
+    </section>
+
+
+    <section>
+        <div class="container-cc">
+            <div class="basis100 column">
+                <h3>Text Layouts</h3>
+            </div>
+        </div>
+
         <div class="container-cc split">
             <div class="bg-white column basis50">
                 <h4>Headline 50%</h4>
@@ -265,13 +387,10 @@
                 </p>
             </div>
         </div>
+    </section>
 
 
-
-
-
-
-
+    <section>
         <div class="container-cc split">
             <div class="bg-lightGray column basis40 flex">
                 <img src="images/imgf.png" class="img-cc max-10em image-right">
@@ -284,8 +403,9 @@
                 </p>
             </div>
         </div>
+    </section>
 
-
+    <section>
         <div class="container-cc split">
             <div class="bg-white column basis60">
                 <h4>Headline 30%</h4>
@@ -299,22 +419,71 @@
                 <img src="images/imgf.png" class="img-cc img-left max-10em">
             </div>
         </div>
-
     </section>
-
 
     <section>
-        <div class="container-cc split">
-            <div class="headline"><h3>Buttons</h3></div>
-            <a class="btn" href="https://leaders.centercentre.com/">Join Now</a>
-            <a class="btn btn-agile" href="https://leaders.centercentre.com/">Join Now</a>
-            <a class="btn btn-goals" href="https://leaders.centercentre.com/">Join Now</a>
-            <a class="btn btn-hiring" href="https://leaders.centercentre.com/">Join Now</a>
-            <a class="btn btn-metrics" href="https://leaders.centercentre.com/">Join Now</a>
-            <a class="btn btn-research" href="https://leaders.centercentre.com/">Join Now</a>
+        <div class="container-cc">
+            <div class="basis100">
+                <h3>Newtab</h3>
+            </div>
         </div>
-
+        <div class="container-cc">
+            <p><span class="newtab">NEW!</span> <strong>VIP Live Sessions: Lead Your UX Metrics Strategy</strong></p>
+        </div>
     </section>
+
+    <section>
+        <div class="container-cc">
+            <div class="basis100">
+                <h3>Testimonials</h3>
+            </div>
+        </div>
+        <div class="container-cc">
+            <div class="split">
+                <div class="testimonial-quote">
+                    <div class="testimonial-quote-bg">
+                        <div class="testimonial-quote-inside">
+                            <p>This intensive is <span class="emph">incredibly energizing</span> and has given me
+                                persuasive insightsthat I’ve employed to push our group to launch a UX accessibility
+                                framework with an outcome tied to bringing equity to users across our org regardless of
+                                role or rank, future-proofing our offerings. I’m so excited!
+
+
+                            </p>
+                            <p> - Paula Bee
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-quote">
+                    <div class="testimonial-quote-bg">
+                        <div class="testimonial-quote-inside">
+                            <p>I found out that this 5-day Persuasive UX Metrics intensive is pure diamond. Even more
+                                thanks to the interactive part. How cool is this that you teach us how to merge UX
+                                Metrics with Business Metrics!
+                            </p>
+                            <p> - Ewa Marciniak </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-quote">
+                    <div class="testimonial-quote-bg">
+                        <div class="testimonial-quote-inside">
+                            <p> Your talks are - as always pedagogic and super easy to follow, the way you visualize,
+                                structure and package the talks: Talking about a current state, recognizing what's wrong
+                                with it (and why) and then how to do it better.
+
+                            </p>
+                            <p> - Jessica Bjemer </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
 
     <section>
         <div class="dark-footer">
