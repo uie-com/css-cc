@@ -88,6 +88,11 @@ FOOTER
     display: block;
 }
 
+.py-2 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
 .pt-5 {
     padding-top: 5 em;
 }
@@ -98,6 +103,10 @@ FOOTER
 
 .no-margin {
     padding: 0;
+}
+
+.center {
+    margin: 0 auto;
 }
 
 /*------------------------------------*\
@@ -435,15 +444,40 @@ p {
 /*------------------------------------*\
     $HERO
 \*------------------------------------*/
-    /* -- content --  */
+
+.hero-research {     
+    background: var(--darkOrange) url("images/Hero/research-hero-bg.png") no-repeat;
+    background-size: cover;
+}
+.hero-goals {       
+    background: var(--brightGreen) url("./images/Hero/goals-hero-bg.png") no-repeat;
+    background-size: cover;
+}
+
+.hero-agile {       
+    background: var(--brightYellow) url("./images/Hero/agile-hero-bg.png") no-repeat;
+    background-size: cover;
+}
+
+.hero-metrics {       
+    background: var(--darkPurple) url("./images/Hero/METRICS-hero-bg.png") no-repeat;
+    background-size: cover;
+}
+
+.hero-community {       
+    background: var(--brightBlue) url("./images/Hero/.png") no-repeat;
+    background-size: cover;
+}
+
+
 /*------------------------------------*\
-    END $HERO
+    $END HERO
 \*------------------------------------*/
 
 
 /*------------------------------------*\
-         $BUTTON
-    \*------------------------------------*/
+    $BUTTON
+\*------------------------------------*/
 
 .btn {
     display: inline-block;
