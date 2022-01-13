@@ -450,22 +450,22 @@ p {
     background-size: cover;
 }
 .hero-goals {       
-    background: var(--brightGreen) url("./images/hero/goals-hero-bg.png") no-repeat;
+    background: var(--brightGreen) url("images/hero/goals-hero-bg.png") no-repeat;
     background-size: cover;
 }
 
 .hero-agile {       
-    background: var(--brightYellow) url("./images/hero/agile-hero-bg.png") no-repeat;
+    background: var(--brightYellow) url("images/hero/agile-hero-bg.png") no-repeat;
     background-size: cover;
 }
 
 .hero-metrics {       
-    background: var(--darkPurple) url("./images/hero/metrics-hero-bg.png") no-repeat;
+    background: var(--darkPurple) url("images/hero/metrics-hero-bg.png") no-repeat;
     background-size: cover;
 }
 
 .hero-community {       
-    background: var(--brightBlue) url("./images/hero/.png") no-repeat;
+    background: var(--brightBlue) url("images/hero/.png") no-repeat;
     background-size: cover;
 }
 
