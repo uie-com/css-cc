@@ -295,7 +295,7 @@ FOOTER
 }
 
 .basis33 {
-    flex-basis: 33.334%;
+    flex-basis: 33.33%;
 }
 
 .basis40 {
@@ -364,6 +364,10 @@ FOOTER
 
     .column:first-child {
         margin-top: 1em;
+    }
+
+    .column {
+        padding: 0em;
     }
 
     .basis20, .basis25, .basis30, .basis40, .basis50, .basis60, .basis80 {

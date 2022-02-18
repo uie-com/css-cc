@@ -66,7 +66,8 @@
         <style>
             .colors .column {
                 min-width: 9em;
-                margin: 0.2em;
+                margin: 0.2em !important;
+                padding: 1em;
             }
         </style>
 
@@ -445,7 +446,7 @@
 
     <section>
         <div class="container-cc split">
-            <div class="basis100">
+            <div class="column basis100">
                 <h3>Newtab</h3>
             </div>
         </div>
@@ -458,11 +459,11 @@
 
     <section>
         <div class="container-cc split">
-            <div class="basis100">
+            <div class="column basis100">
                 <h3>Typography</h3>
             </div>
 
-            <div class="basis50">
+            <div class="column basis50">
                 <h1 class="h1">Heading 1</h1>
                 <h2 class="h2">Heading 2</h2>
                 <h3 class="h3">Heading 3</h3>
@@ -562,7 +563,13 @@
 
 
 
-    <section class="heroSections">
+    <section class="container-cc heroSections">
+        <style>
+            .hero{
+                margin-top:1em;
+                margin-bottom: 1em;
+            }
+        </style>
         <div class="container-cc">
             <div class="basis100 column">
                 <h3>Hero sections</h3>
