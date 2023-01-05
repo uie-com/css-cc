@@ -670,7 +670,7 @@ p {
     display: block;
 }
 
-.pricing-box .btn{
+.pricing-box .btn {
     max-width: 100%;
     bottom: 0;
     left: 0.8em;
@@ -766,6 +766,10 @@ p {
     background-color: var(--darkGreen);
 }
 
+.btn-white {
+    color: var(--buttonTextColor);
+    background-color: var(--white);
+}
 
 
 .btn-shadow {
@@ -784,9 +788,88 @@ p {
     left: -3px;
 }
 
+/*------------------------------------*\
+        $ BUTTONS METRICS 2023 
+\*------------------------------------*/
 
+.btn-cartoon-shadow {
+    box-shadow: 0px 0px 0px 4px rgb(8 8 8), -1px -1px 0px 0px rgb(8 8 8),
+        1px -1px 0px 0px rgb(0 0 0), -1px 1px 0px 0px rgb(0 0 0),
+        -8px 8px 0px 0px rgb(0 0 0);
+    -webkit-box-shadow: 0px 0px 0px 4px rgb(8 8 8), -1px -1px 0px 0px rgb(8 8 8),
+        1px -1px 0px 0px rgb(0 0 0), -1px 1px 0px 0px rgb(0 0 0),
+        -8px 8px 0px 0px rgb(0 0 0);
+    -moz-box-shadow: 0px 0px 0px 4px rgb(8, 8, 8), -1px -1px 0px 0px rgb(8, 8, 8),
+        1px -1px 0px 0px rgb(0, 0, 0), -1px 1px 0px 0px rgb(0, 0, 0),
+        -8px 8px 0px 0px rgba(0, 0, 0, 1);
+    position: relative;
+}
 
+.btn-cartoon-shadow:hover {
+    box-shadow: 0px 0px 0px 4px rgb(8 8 8), -1px -1px 0px 0px rgb(8 8 8),
+        1px -1px 0px 0px rgb(0 0 0), -1px 1px 0px 0px rgb(0 0 0),
+        -5px 6px 0px 0px rgb(0 0 0);
+    -webkit-box-shadow: 0px 0px 0px 4px rgb(8 8 8), -1px -1px 0px 0px rgb(8 8 8),
+        1px -1px 0px 0px rgb(0 0 0), -1px 1px 0px 0px rgb(0 0 0),
+        -5px 6px 0px 0px rgb(0 0 0);
+    -moz-box-shadow: 0px 0px 0px 4px rgb(8, 8, 8), -1px -1px 0px 0px rgb(8, 8, 8),
+        1px -1px 0px 0px rgb(0, 0, 0), -1px 1px 0px 0px rgb(0, 0, 0),
+        -5px 6px 0px 0px rgba(0, 0, 0, 1);
+    bottom: -2px;
+    left: -3px;
+}
 
+.btn-cartoon-shadow-yellow {
+    border: 5px solid black;
+    box-shadow: -8px 8px 0px 0px rgb(220 152 40);
+    -webkit-box-shadow: -8px 8px 0px 0px rgb(220 152 40);
+    -moz-box-shadow: -8px 8px 0px 0px rgb(220, 152, 40);
+    position: relative;
+}
+
+.btn-cartoon-shadow-yellow:hover {
+    box-shadow: -5px 6px 0px 0px rgb(220 152 40);
+    -webkit-box-shadow: -5px 6px 0px 0px rgb(220 152 40);
+    -moz-box-shadow: -5px 6px 0px 0px rgba(220, 152, 40, 1);
+    bottom: -2px;
+    left: -3px;
+}
+
+.btn-cartoon-shadow-blue {
+    border: 5px solid black;
+    box-shadow: -8px 8px 0px 0px rgb(0 163 180);
+    -webkit-box-shadow: -8px 8px 0px 0px rgb(0 163 180);
+    -moz-box-shadow: -8px 8px 0px 0px rgb(0, 163, 180);
+    position: block;
+}
+
+.btn-cartoon-shadow-blue:hover {
+    box-shadow: -5px 6px 0px 0px rgb(0 163 180);
+    -webkit-box-shadow: -5px 6px 0px 0px rgb(0 163 180);
+    -moz-box-shadow: -5px 6px 0px 0px rgba(0, 163, 180, 1);
+    bottom: -2px;
+    left: -3px;
+}
+
+.btn-cartoon-shadow-purple {
+    border: 5px solid black;
+    box-shadow: -8px 8px 0px 0px rgb(155 14 91);
+    -webkit-box-shadow: -8px 8px 0px 0px rgb(155 14 91);
+    -moz-box-shadow: -8px 8px 0px 0px rgb(155, 14, 91);
+    position: relative;
+}
+
+.btn-cartoon-shadow-purple:hover {
+    box-shadow: -5px 6px 0px 0px rgb(155 14 91);
+    -webkit-box-shadow: -5px 6px 0px 0px rgb(155 14 91);
+    -moz-box-shadow: -5px 6px 0px 0px rgba(155, 14, 91, 1);
+    bottom: -2px;
+    left: -3px;
+}
+
+/*------------------------------------*\
+        $ END BUTTONS METRICS 2023 
+\*------------------------------------*/
 
 .btn-agile {
     color: var(--white);
@@ -835,11 +918,6 @@ p {
     box-shadow: 2px 2px 10px 1px #380b1d66;
 }
 
-
-
-
-
-
 .btn-goals {
     font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: var(--black) !important;
@@ -862,11 +940,6 @@ p {
     top: 2px;
     left: -3px;
 }
-
-
-
-
-
 
 /*------------------------------------*\
      END   $BUTTON
