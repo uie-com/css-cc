@@ -84,6 +84,9 @@ FOOTER
 /*------------------------------------*\
     $UTILITY CLASSES
 \*------------------------------------*/
+.sticky{
+    position: sticky;
+}
 .img-cc {
     max-width: 100%;
     display: block;
@@ -1069,7 +1072,7 @@ footer img {
     margin: 0 auto;
 }
 
-.txt-center {
+.txt-cente, .text-center {
     text-align: center;
 }
 
