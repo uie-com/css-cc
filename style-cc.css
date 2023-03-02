@@ -85,6 +85,7 @@ FOOTER
     $UTILITY CLASSES
 \*------------------------------------*/
 .sticky{
+    top:5px;
     position: sticky;
 }
 .img-cc {
@@ -102,6 +103,19 @@ FOOTER
 
 .center {
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 54em) {
+    .hide-on-mobile {
+       display: none;
+    }
+
+}
+@media only screen and (min-width: 54em) {
+    .hide-on-desktop {
+       display: none;
+    }
+
 }
 
 
@@ -552,7 +566,7 @@ h4 {
     line-height: 1.2;
 }
 
-
+.font
 p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
