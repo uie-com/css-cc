@@ -977,6 +977,8 @@ p {
 START TESTIMONIALS
 ----------------------------
 */
+
+/* Testimonial-quote */
 .testimonial-quote {
     margin-right: 20px;
     margin-bottom: 40px;
@@ -1030,6 +1032,40 @@ START TESTIMONIALS
 
 .testimonial-quote-inside {
     padding: 20px;
+}
+
+/* Testimonial-callout */
+
+.testimonial-divider {
+    border-right: 2px solid white;
+}
+
+.testimonial-title h4 {
+    font-size: 1.4em;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.testimonial-title h4::before {
+    width: 15px;
+    height: 15px;
+    content: url('/images/quotes.png');
+    zoom: 3%;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 865px) {
+    
+    .testimonial-divider {
+        border-right: 0px solid white;
+        border-bottom: 2px solid white;
+    }
+
+    .testimonial .pr-3, .testimonial .pl-3 {
+        padding-right: 0em !important;
+        padding-left: 0em !important;
+    }
 }
 
 /*
